@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title> Face Recognition App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+
+    </head>
+    <body>
+        <center>
+        <h1> Face Recognition Application</h1>
+        <br> <br>
+        <h2> List of people and toys used in the model :
+            Me(Ishaan),
+            Teddy1
+            Teddy2
+            Teddy3
+        </h2>
+        <br>
+    <div id="camera"></div>
+    <div id="result"></div>
+    <br> <br>
+    <button id="camerabutton" onclick="takepicture" class="btn btn-info"> Take Picture</button>
+    <br>
+    <button id="identifybutton" onclick="identifypicture" class="btn btn-success"> Identify Picture</button>
+    <br>
+    <p style="font-size: 22px;">Object:<span id="result_object_name"></span></p>
+    <p style="font-size: 22px;">Accuracy:<span id="result_object_accuracy"></span></p>
+</center>
+    </body>
+</html>
